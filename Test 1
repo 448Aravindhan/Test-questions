@@ -1,0 +1,50 @@
+(i) Find the whether given number is positive number or Negative number. 
+
+num = float(input("Enter a number: "))
+if num > 0:
+   print("Positive number")
+elif num == 0:
+   print("Zero")
+else:
+   print("Negative number") 
+
+_______________________________
+
+(ii) Find the sum of Fibonacci series for the given number. 
+
+n=int(input("ENTER THE VALUE OF NUMBER 1"))
+count=0
+a=0
+b=1
+if n==1:
+	print(a)
+else:
+	print(a)
+	print(b)
+	count=a+b
+	for i in range (2,n):
+		c=a+b
+		count+=c
+		a=b
+		b=c
+		print(c)
+print('number of fibonacci serious',count)
+
+_______________________________
+
+(iii) Print the given pattern  
+****
+*   *
+*   *
+****
+
+
+rows = int(input("Enter rows:"))
+cols = int(input("Enter Cols:"))
+for i in range(0, rows):
+    for j in range(0, cols):
+        if i==0 or i == rows-1 or j==0 or j == cols-1:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
